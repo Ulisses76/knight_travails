@@ -1,18 +1,13 @@
 class GraphNode
-  attr_accessor :value, :neighborns
-  
+  attr_accessor :value, :neighborns  
   def initialize(value, neighborn)
     @value = value
-    @neighborns = neighborn
-    
+    @neighborns = neighborn    
   end
-
- 
 end
 
 class Graph
   attr_accessor :node
-
   def initialize
     @node = []
   end
@@ -74,7 +69,6 @@ class Graph
   end
 end
 
-
 class KnightsTravails
 
   def initialize
@@ -117,11 +111,3 @@ class KnightsTravails
 end
 
 KnightsTravails.new
-
-# a = Graph.new
-# # a.add_node([3,3])
-# # a.add_node([2,2])
-# a.make_tree([3,3])
-# p a.path([3,3], [4,3])
-# # a.prev_mov.each {|key, value| puts "node =#{key} anteriores =#{value}"}
-# # a.node.reverse.each {|elem| puts "node =#{elem.value}  vizinhos =#{elem.neighborns}"}
